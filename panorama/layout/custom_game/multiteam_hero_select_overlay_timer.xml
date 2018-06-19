@@ -7,6 +7,6 @@
 		<Image id="TimerBg" src="file://{images}/status_icons/timer_background.psd" />
 		<Image id="TimerRing" src="file://{images}/status_icons/timer_ring.psd" />
 		<Label id="Timer" text="#HeroSelectionTimer" />
-		<Label id="TimerLabel" text="#HeroPick" />
+
 	</Panel>
 </root>

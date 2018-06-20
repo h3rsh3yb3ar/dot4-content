@@ -29,10 +29,10 @@
     GameUI.CustomUIConfig().team_colors = {}
     GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_GOODGUYS] =    "#00ff80;";    // GOODGUYS
     GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_BADGUYS ] =      "#ff0080;";    // BADGUYS
-    GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_1] =     "#00FFEF;";    // Tempest
-		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_2] = "#FFFF00;";       // Altiar
+    GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_1] =     "#ff0000;";    // Tempest
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_2] = "#ffff00;";       // Altiar
         GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_3] = "#00CC00;";    // Radiant
-		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_4] = "#CC0000;";   // Dire
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_4] = "#0000cd;";   // Dire
     
 	GameUI.CustomUIConfig().player_colors = {}
 	GameUI.CustomUIConfig().player_colors[0] = "#cec01d;";
@@ -68,12 +68,11 @@
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/containers/container_base.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/modmaker/modmaker.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/selection.xml" />
-    <CustomUIElement type="Hud"                 layoutfile="file://{resources}/layout/custom_game/statcollection.xml" />
+
 
         <CustomUIElement type="HudTopBar"           layoutfile="file://{resources}/layout/custom_game/multiteam_top_scoreboard.xml" />
                 <CustomUIElement type="FlyoutScoreboard"    layoutfile="file://{resources}/layout/custom_game/multiteam_flyout_scoreboard.xml" />
                         
-						<CustomUIElement type="Hud"                 layoutfile="file://{resources}/layout/custom_game/statcollection.xml" />
 
 
     <!-- From Overthrow.

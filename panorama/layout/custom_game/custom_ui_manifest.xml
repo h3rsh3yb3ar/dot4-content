@@ -32,7 +32,7 @@
     GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_1] =     "#ff0000;";    // Tempest
 		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_2] = "#ffff00;";       // Altiar
         GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_3] = "#00CC00;";    // Radiant
-		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_4] = "#0000cd;";   // Dire
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_4] = "#00FFFF;";   // Dire
     
 	GameUI.CustomUIConfig().player_colors = {}
 	GameUI.CustomUIConfig().player_colors[0] = "#cec01d;";

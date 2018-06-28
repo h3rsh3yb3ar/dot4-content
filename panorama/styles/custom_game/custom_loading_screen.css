@@ -1,0 +1,151 @@
+@define TotalLength: 40s;
+@define TimingFunc: linear;
+@define IterationCount: 1;
+@define AnimationDelay: 0s;
+
+.AddonLoadingRoot
+{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow: clip;
+}
+
+#TitlePanel
+{
+  horizontal-align: left;
+  vertical-align: bottom;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  flow-children: right;
+}
+
+#AddonTitle
+{
+  margin-bottom: 0px;
+  vertical-align: center;
+  text-transform: uppercase;
+  font-size: 0px;
+  color: #cccccc;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.SeqImg
+{
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+}
+
+#CustomBg
+{
+
+  margin-top: 0px;
+    overflow: clip;
+  pre-transform-scale2d: 1.0;
+  animation-name: gamemode_anim;
+  animation-delay: AnimationDelay;
+  animation-duration: TotalLength;
+  animation-timing-function: TimingFunc;
+  animation-iteration-count: IterationCount;
+}
+
+#gamemode
+{
+  margin-left: 0px;
+  /*margin-bottom: 0px;*/
+  
+}
+
+@keyframes 'gamemode_anim'
+{
+  0%
+  {
+    transform: translateX( 0px ) translateY( 0px );
+    pre-transform-scale2d: 1;
+  }
+
+  100%
+  {
+    transform: translateX( 0px ) translateY( 0px );
+  }
+  #CustomBg
+{
+    overflow: clip;
+  pre-transform-scale2d: 1, 1;
+}
+
+.pw-social {
+  width: 670px;
+  margin-left: 2%;
+  vertical-align: bottom;
+  margin-bottom: 250px;
+  padding: 10px;
+  flow-children: down;
+}
+
+.pw-social-title {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 2%;
+  vertical-align: bottom;
+  padding: 10px;
+  flow-children: down;
+  border-radius: 20px;
+  background-color: #000000da;
+}
+
+.pw-social-buttons {
+  width: 100%;
+  flow-children: right;
+}
+
+.pw-social-buttons Button {
+  width: 200px;
+  height: 65px;
+  box-shadow: #000 0 0 10px 0; 
+  align: center center;
+  background-position: center center;
+}
+
+.AspectRatio4x3 .pw-social-buttons Button {
+  width: 180px;
+  height: 59px;
+  box-shadow: #000 0 0 10px 0; 
+  background-position: center center;
+}
+
+.pw-social-buttons Button:hover {
+  box-shadow: #111 0 0 15px 0;
+}
+
+.pw-social-buttons Button:active {
+  box-shadow: #333 0 0 15px 0;
+  width: 198px; 
+}
+
+.AspectRatio4x3 .pw-social-buttons Button:active {
+  width: 178px; 
+}
+
+.pw-social-button {
+  margin-left: 20px;
+  background-size: contain;
+  saturation: 0.9;
+}
+
+.pw-social-button:hover {
+  saturation: 1.0;
+}
+
+#pw-social-button-patreon-en {
+  background-image: url("file://{images}/custom_game/loading_screen/patreon.png");
+  background-size: cover;
+}
+
+#pw-social-button-discord-en {
+  background-image: url("file://{images}/custom_game/loading_screen/community_discord_header.png"); 
+  background-size: cover;
+}
+}

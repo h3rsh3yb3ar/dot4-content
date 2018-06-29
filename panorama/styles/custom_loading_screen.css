@@ -5,6 +5,7 @@
 
 .AddonLoadingRoot
 {
+  background-image: url("file://{images}/custom_game/loading_screen/gamemode.png");
     width: 100%;
     height: 100%;
     background-color: black;
@@ -69,4 +70,5 @@
   {
     transform: translateX( 0px ) translateY( 0px );
   }
+
 }

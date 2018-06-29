@@ -15,67 +15,47 @@
 {
   horizontal-align: left;
   vertical-align: bottom;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  margin-bottom: 150px;
+  margin-left: 100px;
   flow-children: right;
 }
 
 #AddonTitle
 {
-  margin-bottom: 0px;
+  margin-bottom: -15px;
   vertical-align: center;
-  text-transform: uppercase;
-  font-size: 0px;
-  color: #cccccc;
-  text-shadow: 2px 2px 2px #000000;
 }
 
-.SeqImg
+.LabelBig,
+.LabelMid
+{
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 80px;
+  color: #cccccc;
+  text-shadow: 2px 2px 2px #000000;
+  text-align: center;
+}
+
+.LabelMid
+{
+  font-size: 19px;
+}
+
+.ProBg
 {
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  background-position: 50% 50%;
   background-size: 100% 100%;
 }
 
 #CustomBg
 {
-
-  margin-top: 0px;
-    overflow: clip;
-  pre-transform-scale2d: 1.0;
-  animation-name: gamemode_anim;
-  animation-delay: AnimationDelay;
-  animation-duration: TotalLength;
-  animation-timing-function: TimingFunc;
-  animation-iteration-count: IterationCount;
-}
-
-#gamemode
-{
-  margin-left: 0px;
-  /*margin-bottom: 0px;*/
-  
-}
-
-@keyframes 'gamemode_anim'
-{
-  0%
-  {
-    transform: translateX( 0px ) translateY( 0px );
-    pre-transform-scale2d: 1;
-  }
-
-  100%
-  {
-    transform: translateX( 0px ) translateY( 0px );
-  }
-  #CustomBg
-{
     overflow: clip;
   pre-transform-scale2d: 1, 1;
 }
 
-.pw-social {
+.dot4-social {
   width: 670px;
   margin-left: 2%;
   vertical-align: bottom;
@@ -84,68 +64,75 @@
   flow-children: down;
 }
 
-.pw-social-title {
+.dot4-social-title {
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 2%;
+  margin-bottom: 40px;
+  margin-left: 15%;
   vertical-align: bottom;
   padding: 10px;
   flow-children: down;
-  border-radius: 20px;
-  background-color: #000000da;
+  border-radius: 30px;
+  background-color: #800000da;
 }
 
-.pw-social-buttons {
+.dot4-social-buttons {
   width: 100%;
   flow-children: right;
+  margin-left: 10%;
 }
 
-.pw-social-buttons Button {
-  width: 200px;
+.dot4-social-buttons Button {
+  width: 204px;
   height: 65px;
-  box-shadow: #000 0 0 10px 0; 
+  margin-left: 10%;
+  box-shadow: #000 0 0 20px 0; 
   align: center center;
   background-position: center center;
 }
 
-.AspectRatio4x3 .pw-social-buttons Button {
-  width: 180px;
-  height: 59px;
-  box-shadow: #000 0 0 10px 0; 
+.AspectRatio4x3 .dot4-social-buttons Button {
+  width: 204px;
+  height: 65px;
+  margin-left: 10%;
+  box-shadow: #000 0 20px 0; 
   background-position: center center;
 }
 
-.pw-social-buttons Button:hover {
-  box-shadow: #111 0 0 15px 0;
+.dot4-social-buttons Button:hover {
+  box-shadow: #111 0 0 20px 0;
+  margin-left: 10%;
 }
 
-.pw-social-buttons Button:active {
-  box-shadow: #333 0 0 15px 0;
+.dot4-social-buttons Button:active {
+  box-shadow: #333 0 0 20px 0;
   width: 198px; 
+  margin-left: 10%;
 }
 
-.AspectRatio4x3 .pw-social-buttons Button:active {
-  width: 178px; 
+.AspectRatio4x3 .dot4-social-buttons Button:active {
+  width: 204px;
+  height: 65px;
 }
 
-.pw-social-button {
-  margin-left: 20px;
+.dot4-social-button {
+  margin-left: 0px;
   background-size: contain;
   saturation: 0.9;
+  margin-left: 10%;
 }
 
-.pw-social-button:hover {
+.dot4-social-button:hover {
   saturation: 1.0;
 }
 
-#pw-social-button-patreon-en {
+#dot4-social-button-patreon-en {
   background-image: url("file://{images}/custom_game/loading_screen/patreon.png");
   background-size: cover;
 }
 
-#pw-social-button-discord-en {
+#dot4-social-button-discord-en {
   background-image: url("file://{images}/custom_game/loading_screen/community_discord_header.png"); 
-  background-size: cover;
-}
+  background-size: 100% 100%;
+  margin-left: 10%;
 }

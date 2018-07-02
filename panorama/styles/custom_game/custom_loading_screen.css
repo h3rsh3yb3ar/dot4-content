@@ -64,50 +64,38 @@
   flow-children: down;
 }
 
-.dot4-social-title {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  margin-left: 15%;
-  vertical-align: bottom;
-  padding: 10px;
-  flow-children: down;
-  border-radius: 30px;
-  background-color: #800000da;
-}
-
 .dot4-social-buttons {
   width: 100%;
   flow-children: right;
-  margin-left: 10%;
+  margin-left: 18%;
 }
 
 .dot4-social-buttons Button {
   width: 204px;
   height: 65px;
-  margin-left: 10%;
+  margin-left: 32%;
   box-shadow: #000 0 0 20px 0; 
-  align: center center;
+  align: center bottom;
   background-position: center center;
 }
 
 .AspectRatio4x3 .dot4-social-buttons Button {
   width: 204px;
   height: 65px;
-  margin-left: 10%;
+  margin-left: 18%;
   box-shadow: #000 0 20px 0; 
   background-position: center center;
 }
 
 .dot4-social-buttons Button:hover {
   box-shadow: #111 0 0 20px 0;
-  margin-left: 10%;
+  margin-left: 18%;
 }
 
 .dot4-social-buttons Button:active {
   box-shadow: #333 0 0 20px 0;
   width: 198px; 
-  margin-left: 10%;
+  margin-left: 18%;
 }
 
 .AspectRatio4x3 .dot4-social-buttons Button:active {
@@ -119,7 +107,7 @@
   margin-left: 0px;
   background-size: contain;
   saturation: 0.9;
-  margin-left: 10%;
+  margin-left: 18%;
 }
 
 .dot4-social-button:hover {
@@ -134,5 +122,5 @@
 #dot4-social-button-discord-en {
   background-image: url("file://{images}/custom_game/loading_screen/community_discord_header.png"); 
   background-size: 100% 100%;
-  margin-left: 10%;
+  margin-left: 18%;
 }

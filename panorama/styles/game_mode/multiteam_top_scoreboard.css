@@ -137,10 +137,10 @@
 	vertical-align: bottom;
 	horizontal-align: left;
     color: white;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     text-shadow: 4px 4px 4px black;
-	margin-bottom: -2px;
+	margin-bottom: px;
     text-overflow: clip;
 }
 
@@ -190,8 +190,8 @@
 
 .ScoreboardPlayer
 {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 0px solid black;
+    border-right: 0px solid black;
 }
 
 .ScoreboardPlayerWrapper
@@ -214,7 +214,7 @@
 
 #PlayerColorBar
 {
-    height: 6px;
+    height: 120px;
     width: 100%;
     border-bottom: 1px solid #000000;
 }

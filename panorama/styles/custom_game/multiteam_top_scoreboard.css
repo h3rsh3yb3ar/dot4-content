@@ -4,13 +4,14 @@
 
 .CustomHudRoot
 {
-	width: 100%;
-	height: 100%;
+	width: 140%;
+	height: 140%;
 }
 
 #TopBarScoreboard
 {
-	margin-left: 40px;
+	margin-left: 63px;
+	margin-top: 0px;
     horizontal-align: left;
     vertical-align: top;
 }
@@ -18,7 +19,7 @@
 .AspectRatio4x3 #TopBarScoreboard,
 .AspectRatio5x4 #TopBarScoreboard
 {
-	margin-left: 225px;
+	margin-left: 280px;
 }
 
 #ScoreboardContainer
@@ -32,7 +33,7 @@
 {
     horizontal-align: left;
     vertical-align: top;
-    height: 250px;
+    height:280px;
     padding-left: EXTRA_PADDING;
     padding-right: EXTRA_PADDING;
 
@@ -65,10 +66,9 @@
 
 #ScoreboardTeam
 {
-    margin-left: EXTRA_PADDING;
-    margin-right: EXTRA_PADDING;
-	padding-left: 50px;
-	padding-right: 5px;
+
+	padding-left: 100px;
+	padding-right: 50px;
 }
 
 .AspectRatio4x3 .ScoreboardTeamWrapper, .AspectRatio5x4 .ScoreboardTeamWrapper
@@ -139,7 +139,7 @@
 #LogoAndScore
 {
     height: 100%;
-	width: 64px;
+	width: 80px;
 }
 
 #TeamScore
@@ -169,7 +169,7 @@
 
 #PlayersContainer
 {
-    padding-left: 24px;
+    padding-left: 22px;
     flow-children: right;
 }
 
@@ -195,7 +195,7 @@
 
 .ScoreboardTeamWrapper.local_player_team #LocalTeamOverlay
 {
-	box-shadow: -3px -3px 12px 6px #FFFFFF88;
+	box-shadow: 0px 0px 12px 0px #FFFFFF88;
 }
 
 .ScoreboardPlayer
@@ -238,7 +238,7 @@
 .player_dead #HeroIcon
 {
 	wash-color: #CCCCCC;
-	saturation: 0;
+	saturation: 9;
 }
 
 .player_connection_abandoned #HeroIcon

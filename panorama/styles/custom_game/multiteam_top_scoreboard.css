@@ -169,7 +169,7 @@
 
 #PlayersContainer
 {
-    padding-left: 22px;
+    padding-left: 24px;
     flow-children: right;
 }
 
@@ -238,7 +238,7 @@
 .player_dead #HeroIcon
 {
 	wash-color: #CCCCCC;
-	saturation: 9;
+	saturation: 0;
 }
 
 .player_connection_abandoned #HeroIcon

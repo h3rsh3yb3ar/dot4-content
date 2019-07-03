@@ -1,11 +1,12 @@
 <root>
 	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
 		<include src="file://{resources}/styles/custom_game/custom_loading_screen.css" />
 	</styles>
 
 	<Panel class="dot4LoadingRoot">
 		<Panel id="CustomBg" >
-			<Image id="bg" class="ProBg" src="file://{images}/custom_game/loading_screen/gamemode.png" />
+			<Image id="seq_bg" class="SeqBg" src="file://{images}/custom_game/loading_screen/gamemode.png" />
 		</Panel>
 
 		<Panel class="dot4-social">

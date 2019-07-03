@@ -22,52 +22,58 @@
     //GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_HERO_SELECTION_GAME_NAME, false );     //Hero selection game mode name display.
     //GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_HERO_SELECTION_CLOCK, false );     //Hero selection clock.
     //GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_MENU_BUTTONS, false );     //Top-left menu buttons in the HUD.
-    //GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_ENDGAME, false );      //Endgame scoreboard.    
+    GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_ENDGAME, false );      //Endgame scoreboard.    
     //GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_TOP_BAR_BACKGROUND, false );     //Top-left menu buttons in the HUD.
+
 
     // These lines set up the panorama colors used by each team (for game select/setup, etc)
     GameUI.CustomUIConfig().team_colors = {}
-    GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_GOODGUYS] =    "#00ff80;";    // GOODGUYS
+    GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_GOODGUYS] =    "#800080;";    // GOODGUYS
     GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_BADGUYS ] =      "#ff0080;";    // BADGUYS
-    GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_1] =     "#ff0000;";    // Tempest
-		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_2] = "#ffff00;";       // Altiar
-        GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_3] = "#00CC00;";    // Radiant
+    GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_1] =     "#FF8000;";    // Tempest
+		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_2] = "#F7FF00;";       // Altiar
+        GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_3] = "#FF6EFB;";    // Radiant
 		GameUI.CustomUIConfig().team_colors[DOTATeam_t.DOTA_TEAM_CUSTOM_4] = "#00FFFF;";   // Dire
+    GameUI.CustomUIConfig().team_logo_xml = "file://{resources}/layout/custom_game/overthrow_team_icon.xml";
+    GameUI.CustomUIConfig().team_logo_large_xml = "file://{resources}/layout/custom_game/overthrow_team_icon_large.xml";
     
 	GameUI.CustomUIConfig().player_colors = {}
-	GameUI.CustomUIConfig().player_colors[0] = "#cec01d;";
-	GameUI.CustomUIConfig().player_colors[1] = "#cec01d;";
-	GameUI.CustomUIConfig().player_colors[2] = "#cec01d;";
-	GameUI.CustomUIConfig().player_colors[3] = "#cec01d;";
-	GameUI.CustomUIConfig().player_colors[4] = "#cec01d;";
-	GameUI.CustomUIConfig().player_colors[5] = "#bfd4ff;";
-	GameUI.CustomUIConfig().player_colors[6] = "#bfd4ff;";
-	GameUI.CustomUIConfig().player_colors[7] = "#bfd4ff;";
-	GameUI.CustomUIConfig().player_colors[8] = "#bfd4ff;";
-	GameUI.CustomUIConfig().player_colors[9] = "#bfd4ff;";
-	GameUI.CustomUIConfig().player_colors[10] = "#00ffc0;";
-	GameUI.CustomUIConfig().player_colors[11] = "#00ffc0;";
-	GameUI.CustomUIConfig().player_colors[12] = "#00ffc0;";
-	GameUI.CustomUIConfig().player_colors[13] = "#00ffc0;";
-	GameUI.CustomUIConfig().player_colors[14] = "#00ffc0;";
-	GameUI.CustomUIConfig().player_colors[15] = "#cb62cb;";
-	GameUI.CustomUIConfig().player_colors[16] = "#cb62cb;";
-	GameUI.CustomUIConfig().player_colors[17] = "#cb62cb;";
-	GameUI.CustomUIConfig().player_colors[18] = "#cb62cb;";
-	GameUI.CustomUIConfig().player_colors[19] = "#cb62cb;";
+	GameUI.CustomUIConfig().player_colors[0] = "#FF8000;";
+	GameUI.CustomUIConfig().player_colors[1] = "#FF8000";
+	GameUI.CustomUIConfig().player_colors[2] = "#FF8000";
+	GameUI.CustomUIConfig().player_colors[3] = "#FF8000";
+	GameUI.CustomUIConfig().player_colors[4] = "#FF8000";
+	GameUI.CustomUIConfig().player_colors[5] = "#F7FF00;";
+	GameUI.CustomUIConfig().player_colors[6] = "#F7FF00;";
+	GameUI.CustomUIConfig().player_colors[7] = "#F7FF00;";
+	GameUI.CustomUIConfig().player_colors[8] = "#F7FF00;";
+	GameUI.CustomUIConfig().player_colors[9] = "#F7FF00;";
+	GameUI.CustomUIConfig().player_colors[10] = "#FF6EFB;";
+	GameUI.CustomUIConfig().player_colors[11] = "#FF6EFB;";
+	GameUI.CustomUIConfig().player_colors[12] = "#FF6EFB;";
+	GameUI.CustomUIConfig().player_colors[13] = "#FF6EFB;";
+	GameUI.CustomUIConfig().player_colors[14] = "#FF6EFB;";
+	GameUI.CustomUIConfig().player_colors[15] = "#00FFFF;";
+	GameUI.CustomUIConfig().player_colors[16] = "#00FFFF;";
+	GameUI.CustomUIConfig().player_colors[17] = "#00FFFF;";
+	GameUI.CustomUIConfig().player_colors[18] = "#00FFFF;";
+	GameUI.CustomUIConfig().player_colors[19] = "#00FFFF;";
 
-    function HidePickScreen() {
-            var dotaHud = $.GetContextPanel().GetParent().GetParent();
-            if (Game.GameStateIsBefore(DOTA_GameState.DOTA_GAMERULES_STATE_HERO_SELECTION)) {
-                dotaHud.FindChild("PreGame").visible = false;
-            }
-            else if (Game.GameStateIs(DOTA_GameState.DOTA_GAMERULES_STATE_HERO_SELECTION)) {
-                dotaHud.FindChild("PreGame").visible = true;
-            }
-            else if (Game.GameStateIs(DOTA_GameState.DOTA_GAMERULES_STATE_PRE_GAME)) {
-                dotaHud.FindChild("PreGame").visible = false;
-            }
-        }
+    GameUI.CustomUIConfig().team_icons = {}
+    GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_GOODGUYS] = "file://{images}/custom_game/team_icons/team_icon_tiger_01.png";
+    GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_BADGUYS ] = "file://{images}/custom_game/team_icons/team_icon_monkey_01.png";
+
+
+    GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_1] = "file://{images}/custom_game/team_icons/team_icon_dragon_01.png";
+    GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_2] = "file://{images}/custom_game/team_icons/team_icon_dog_01.png";
+    GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_3] = "file://{images}/custom_game/team_icons/team_icon_rooster_01.png";
+    GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_4] = "file://{images}/custom_game/team_icons/team_icon_ram_01.png";
+
+
+    GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_5] = "file://{images}/custom_game/team_icons/team_icon_rat_01.png";
+    GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_6] = "file://{images}/custom_game/team_icons/team_icon_boar_01.png";
+    GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_7] = "file://{images}/custom_game/team_icons/team_icon_snake_01.png";
+    GameUI.CustomUIConfig().team_icons[DOTATeam_t.DOTA_TEAM_CUSTOM_8] = "file://{images}/custom_game/team_icons/team_icon_horse_01.png";
 
 
   </script> 
@@ -81,6 +87,7 @@
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/containers/container_base.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/modmaker/modmaker.xml" />
     <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/selection.xml" />
+    <CustomUIElement type="EndScreen"           layoutfile="file://{resources}/layout/custom_game/multiteam_end_screen.xml" />
 
 
         <CustomUIElement type="HudTopBar"           layoutfile="file://{resources}/layout/custom_game/multiteam_top_scoreboard.xml" />

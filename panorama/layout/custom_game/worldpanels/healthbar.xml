@@ -2,6 +2,8 @@
   <styles>
     <include src="s2r://panorama/styles/dotastyles.vcss_c" />
     <include src="file://{resources}/styles/worldpanels/healthbar.css" />
+    <include src="file://{resources}/layout/custom_game/overthrow_team_icon.xml" />
+    <include src= "file://{resources}/layout/custom_game/overthrow_team_icon_large.xml" />
   </styles>
   <scripts>
     <include src="file://{resources}/scripts/worldpanels/healthbar.js" /> 

@@ -195,7 +195,7 @@
 
 .ScoreboardTeamWrapper.local_player_team #LocalTeamOverlay
 {
-	box-shadow: -3px -3px 12px 6px #FFFFFF88;
+	box-shadow: -2px -3px 12px 6px #FFFFFF88;
 }
 
 .ScoreboardPlayer
